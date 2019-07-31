@@ -294,6 +294,10 @@ sportserver.events.on(
 
 - Certain sports (example: MLB) often start 5-10 min after their scheduled time. Our data feeds update as soon as the game data is available. To account for this we've included a game state called `status: "about-to-start"`. Use this when you don’t want a countdown clock stuck at 00:00:00 while you're waiting for the opening pitch.
 
+- Game IDs expire 18 hours after the game has closed. (unless something is targeted to participating team and there is no new game for that team).
+
+- If your tag has stopped working, first confirm with adops that the campaign dates are still active and a that the budget hasn't been exceeded.
+
 
 ## Data Examples
 - [MLB - Pregame](https://github.com/fanserv/SportServ-Docs/blob/master/sample-data/mlb/mlb_pre-game.json)
